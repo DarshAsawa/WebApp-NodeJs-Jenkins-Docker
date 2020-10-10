@@ -1,4 +1,7 @@
 From node
 
-ADD main_modules /
+ADD . /
 WORKDIR /
+
+RUN npm install
+RUN npm build

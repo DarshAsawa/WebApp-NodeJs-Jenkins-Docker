@@ -1,6 +1,6 @@
 pipeline {
     environment{
-    registryCredential = 'dockerhub-id'
+    registryCredential = 'dockerhub_id'
     }
     agent none
     stages {
@@ -8,9 +8,7 @@ pipeline {
             agent { dockerfile true }
             steps {
                 sh 'npm --version'
-                sh 'cd main_modules'
-                sh 'npm install'
-                sh 'npm build'
+           
             }
         }
     stage('Deploy'){
