@@ -17,7 +17,7 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "darshasawa7899/node-jenkins-docker:4"
+  default     = "darshasawa7899/node-jenkins-docker:latest"
 }
 
 variable "app_port" {
