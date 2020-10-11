@@ -7,5 +7,5 @@ RUN npm --version
 RUN npm build
 
 EXPOSE 5000
-CMD ["node", "server.js"]
+CMD ["node", "app.js"]
 
