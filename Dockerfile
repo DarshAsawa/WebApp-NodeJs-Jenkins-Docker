@@ -3,5 +3,5 @@ From node
 ADD . /
 WORKDIR /
 
-RUN npm install
+RUN npm --version
 RUN npm build
