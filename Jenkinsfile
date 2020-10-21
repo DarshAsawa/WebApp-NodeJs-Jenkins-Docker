@@ -17,7 +17,7 @@ pipeline {
         steps {
             script {
        docker.withRegistry( '', registryCredential ){
-            def customImage = docker.build("darshasawa7899/node-jenkins-docker:${env.BUILD_ID}")
+            def customImage = docker.build("darshasawa7899/node-jenkins-docker:7")
             customImage.push()
                     }    
                 }
